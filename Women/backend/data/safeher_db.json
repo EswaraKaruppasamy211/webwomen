@@ -1,0 +1,1043 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_001",
+      "name": "System Administrator",
+      "email": "admin@safeher.ai",
+      "phone": "+1-800-555-0199",
+      "passwordHash": "$2a$12$vQY3vQ4RuZv2xlZo1ttFTeyK89tu3NYp4IFvfICy.D6FxliMDZI/e",
+      "role": "ADMIN",
+      "createdAt": "2026-08-12T18:01:31.409Z",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150"
+    },
+    {
+      "id": "usr_demo_001",
+      "name": "Sarah Jenkins",
+      "email": "sarah@safeher.ai",
+      "phone": "+1-555-014-8832",
+      "passwordHash": "$2a$12$OtbC2iblHCmOqNrAjb11Jey50IEsG0hkuYaHB.6F1.4Xmt9G0qWWO",
+      "role": "USER",
+      "createdAt": "2026-08-12T18:01:31.409Z",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150"
+    },
+    {
+      "name": "Priya Sharma",
+      "email": "priya.safety@gmail.com",
+      "phone": "+1-555-099-1234",
+      "passwordHash": "$2a$12$MuBHHuScuRKITcgrMkyKEOeZ8aUiPLZGhL3cQLiRGCc7oM3NryFEK",
+      "role": "USER",
+      "id": "usr_d86ebe31",
+      "createdAt": "2026-08-12T18:26:01.158Z"
+    },
+    {
+      "name": "Janani",
+      "email": "eswarakaruppasamy123@gmail.com",
+      "phone": "9943362828",
+      "passwordHash": "$2a$12$5O8PuMEspcAiCcNwRkTI3.EkCjb6XANko8BrI1tUTkg6TlelfX/jK",
+      "role": "USER",
+      "id": "usr_86e52fb5",
+      "createdAt": "2026-08-12T18:27:23.571Z"
+    },
+    {
+      "name": "Janani",
+      "email": "janani@gmail.com",
+      "phone": "9344869645",
+      "passwordHash": "$2a$12$SOcLZsoLxuPezGr.CEi00.sGu2DCEFfS8qlN79oUIPqy0.lgBa8E6",
+      "role": "USER",
+      "id": "usr_56821a57",
+      "createdAt": "2026-08-12T18:38:59.486Z"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "cnt_001",
+      "userId": "usr_demo_001",
+      "name": "Elena Jenkins",
+      "phone": "+1-555-019-4481",
+      "email": "elena.jenkins@example.com",
+      "relationship": "Mother",
+      "verified": true,
+      "notifyOnSOS": true,
+      "createdAt": "2026-08-02T18:01:31.409Z"
+    },
+    {
+      "id": "cnt_002",
+      "userId": "usr_demo_001",
+      "name": "Marcus Vance",
+      "phone": "+1-555-018-9922",
+      "email": "m.vance@example.com",
+      "relationship": "Brother",
+      "verified": true,
+      "notifyOnSOS": true,
+      "createdAt": "2026-08-07T18:01:31.409Z"
+    },
+    {
+      "id": "cnt_003",
+      "userId": "usr_demo_001",
+      "name": "Aisha Patel",
+      "phone": "+1-555-017-3311",
+      "email": "aisha.p@example.com",
+      "relationship": "Close Friend / Roommate",
+      "verified": true,
+      "notifyOnSOS": true,
+      "createdAt": "2026-08-10T18:01:31.409Z"
+    },
+    {
+      "userId": "usr_d86ebe31",
+      "name": "Anita Sharma (Sister)",
+      "phone": "+1-555-099-5678",
+      "email": "anita.sharma@gmail.com",
+      "relationship": "Sister",
+      "verified": true,
+      "notifyOnSOS": true,
+      "id": "cnt_32206932",
+      "createdAt": "2026-08-12T18:26:01.198Z"
+    }
+  ],
+  "emergencyIncidents": [
+    {
+      "userId": "usr_demo_001",
+      "userName": "Sarah Jenkins",
+      "userPhone": "+1-555-014-8832",
+      "latitude": 37.7752,
+      "longitude": -122.419,
+      "accuracy": 8,
+      "address": "Civic Center Plaza",
+      "status": "RESOLVED",
+      "isDemo": true,
+      "id": "inc_ee7f069d",
+      "startedAt": "2026-08-12T18:01:47.811Z",
+      "contactNotifications": [
+        {
+          "contactId": "cnt_001",
+          "contactName": "Elena Jenkins",
+          "channel": "SMS",
+          "destination": "+1-555-019-4481",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_38e30194-f",
+          "timestamp": "2026-08-12T18:01:47.840Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:31:47 pm. Location: Civic Center Plaza. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_ee7f069d. Incident ID: inc_ee7f069d."
+        },
+        {
+          "contactId": "cnt_002",
+          "contactName": "Marcus Vance",
+          "channel": "SMS",
+          "destination": "+1-555-018-9922",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_76b936f9-8",
+          "timestamp": "2026-08-12T18:01:47.841Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:31:47 pm. Location: Civic Center Plaza. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_ee7f069d. Incident ID: inc_ee7f069d."
+        },
+        {
+          "contactId": "cnt_003",
+          "contactName": "Aisha Patel",
+          "channel": "SMS",
+          "destination": "+1-555-017-3311",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_5cf7438d-2",
+          "timestamp": "2026-08-12T18:01:47.841Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:31:47 pm. Location: Civic Center Plaza. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_ee7f069d. Incident ID: inc_ee7f069d."
+        }
+      ],
+      "notes": "Officer on scene, user is safe in secure vehicle.",
+      "acknowledgedAt": "2026-08-12T18:02:03.184Z",
+      "resolvedAt": "2026-08-12T18:02:03.211Z"
+    },
+    {
+      "userId": "usr_demo_001",
+      "userName": "Sarah Jenkins",
+      "userPhone": "+1-555-014-8832",
+      "latitude": 9.671927049163052,
+      "longitude": 77.96399026739874,
+      "accuracy": 127,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": true,
+      "id": "inc_e0f8bca5",
+      "startedAt": "2026-08-12T18:16:46.540Z",
+      "contactNotifications": [
+        {
+          "contactId": "cnt_001",
+          "contactName": "Elena Jenkins",
+          "channel": "SMS",
+          "destination": "+1-555-019-4481",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_6158b03d-e",
+          "timestamp": "2026-08-12T18:16:46.547Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:46:46 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_e0f8bca5. Incident ID: inc_e0f8bca5."
+        },
+        {
+          "contactId": "cnt_002",
+          "contactName": "Marcus Vance",
+          "channel": "SMS",
+          "destination": "+1-555-018-9922",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_df8b419a-9",
+          "timestamp": "2026-08-12T18:16:46.548Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:46:46 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_e0f8bca5. Incident ID: inc_e0f8bca5."
+        },
+        {
+          "contactId": "cnt_003",
+          "contactName": "Aisha Patel",
+          "channel": "SMS",
+          "destination": "+1-555-017-3311",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_3dd4935b-3",
+          "timestamp": "2026-08-12T18:16:46.548Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:46:46 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_e0f8bca5. Incident ID: inc_e0f8bca5."
+        }
+      ],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:17:02.538Z"
+    },
+    {
+      "userId": "usr_demo_001",
+      "userName": "Sarah Jenkins",
+      "userPhone": "+1-555-014-8832",
+      "latitude": 9.671896469765738,
+      "longitude": 77.96396809626177,
+      "accuracy": 135,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": true,
+      "id": "inc_f558b6da",
+      "startedAt": "2026-08-12T18:17:30.763Z",
+      "contactNotifications": [
+        {
+          "contactId": "cnt_001",
+          "contactName": "Elena Jenkins",
+          "channel": "SMS",
+          "destination": "+1-555-019-4481",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_eb72b5c5-e",
+          "timestamp": "2026-08-12T18:17:30.772Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:47:30 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_f558b6da. Incident ID: inc_f558b6da."
+        },
+        {
+          "contactId": "cnt_002",
+          "contactName": "Marcus Vance",
+          "channel": "SMS",
+          "destination": "+1-555-018-9922",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_f3c31e8b-4",
+          "timestamp": "2026-08-12T18:17:30.773Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:47:30 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_f558b6da. Incident ID: inc_f558b6da."
+        },
+        {
+          "contactId": "cnt_003",
+          "contactName": "Aisha Patel",
+          "channel": "SMS",
+          "destination": "+1-555-017-3311",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_55c7f9da-1",
+          "timestamp": "2026-08-12T18:17:30.773Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:47:30 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_f558b6da. Incident ID: inc_f558b6da."
+        }
+      ],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:17:57.296Z"
+    },
+    {
+      "userId": "usr_demo_001",
+      "userName": "Sarah Jenkins",
+      "userPhone": "+1-555-014-8832",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": false,
+      "id": "inc_d7d67eb2",
+      "startedAt": "2026-08-12T18:23:26.054Z",
+      "contactNotifications": [
+        {
+          "contactId": "cnt_001",
+          "contactName": "Elena Jenkins",
+          "channel": "SMS",
+          "destination": "+1-555-019-4481",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_64942f7d-a",
+          "timestamp": "2026-08-12T18:23:26.071Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:53:26 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_d7d67eb2. Incident ID: inc_d7d67eb2."
+        },
+        {
+          "contactId": "cnt_002",
+          "contactName": "Marcus Vance",
+          "channel": "SMS",
+          "destination": "+1-555-018-9922",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_43787f00-8",
+          "timestamp": "2026-08-12T18:23:26.071Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:53:26 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_d7d67eb2. Incident ID: inc_d7d67eb2."
+        },
+        {
+          "contactId": "cnt_003",
+          "contactName": "Aisha Patel",
+          "channel": "SMS",
+          "destination": "+1-555-017-3311",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_87e98a8f-5",
+          "timestamp": "2026-08-12T18:23:26.078Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Sarah Jenkins: SafeHer AI SOS triggered at 11:53:26 pm. Location: Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_d7d67eb2. Incident ID: inc_d7d67eb2."
+        }
+      ],
+      "notes": "im in danger\n",
+      "cancelledAt": "2026-08-12T18:24:00.003Z"
+    },
+    {
+      "userId": "usr_d86ebe31",
+      "userName": "Priya Sharma",
+      "userPhone": "+1-555-099-1234",
+      "latitude": 37.7812,
+      "longitude": -122.418,
+      "accuracy": 9.5,
+      "address": "4th Street & Market Blvd",
+      "status": "NEW",
+      "isDemo": false,
+      "id": "inc_35026da5",
+      "startedAt": "2026-08-12T18:26:01.220Z",
+      "contactNotifications": [
+        {
+          "contactId": "cnt_32206932",
+          "contactName": "Anita Sharma (Sister)",
+          "channel": "SMS",
+          "destination": "+1-555-099-5678",
+          "status": "DELIVERED",
+          "deliveryId": "dlv_d290976a-9",
+          "timestamp": "2026-08-12T18:26:01.271Z",
+          "messagePreview": "🚨 EMERGENCY ALERT from Priya Sharma: SafeHer AI SOS triggered at 11:56:01 pm. Location: 4th Street & Market Blvd. Live map tracking link: http://localhost:3000/app/sos?incidentId=inc_35026da5. Incident ID: inc_35026da5."
+        }
+      ]
+    },
+    {
+      "userId": "usr_86e52fb5",
+      "userName": "Janani",
+      "userPhone": "9943362828",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": false,
+      "id": "inc_96d17f4b",
+      "startedAt": "2026-08-12T18:29:35.867Z",
+      "contactNotifications": [],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:30:05.152Z"
+    },
+    {
+      "userId": "usr_86e52fb5",
+      "userName": "Janani",
+      "userPhone": "9943362828",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": false,
+      "id": "inc_61184496",
+      "startedAt": "2026-08-12T18:31:57.820Z",
+      "contactNotifications": [],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:32:20.988Z"
+    },
+    {
+      "userId": "usr_56821a57",
+      "userName": "Janani",
+      "userPhone": "9344869645",
+      "latitude": 9.671897289692678,
+      "longitude": 77.96396902470478,
+      "accuracy": 164,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": false,
+      "id": "inc_8c3cf2f1",
+      "startedAt": "2026-08-12T18:39:48.613Z",
+      "contactNotifications": [],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:40:14.786Z"
+    },
+    {
+      "userId": "usr_56821a57",
+      "userName": "Janani",
+      "userPhone": "9344869645",
+      "latitude": 9.67193662988695,
+      "longitude": 77.96399756567357,
+      "accuracy": 156,
+      "address": "Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi",
+      "status": "CANCELLED",
+      "isDemo": false,
+      "id": "inc_a14990b3",
+      "startedAt": "2026-08-12T18:40:24.467Z",
+      "contactNotifications": [],
+      "notes": "Accidental trigger / User is safe",
+      "cancelledAt": "2026-08-12T18:41:14.831Z"
+    }
+  ],
+  "locationUpdates": [
+    {
+      "incidentId": "inc_ee7f069d",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "accuracy": 10.5,
+      "timestamp": "2026-08-12T18:01:47.812Z",
+      "id": "loc_fffba683"
+    },
+    {
+      "incidentId": "inc_ee7f069d",
+      "latitude": 37.7752,
+      "longitude": -122.419,
+      "accuracy": 8,
+      "speed": 1.4,
+      "timestamp": "2026-08-12T18:02:03.198Z",
+      "id": "loc_5ea57a03"
+    },
+    {
+      "incidentId": "inc_e0f8bca5",
+      "latitude": 9.671927049163052,
+      "longitude": 77.96399026739874,
+      "accuracy": 127,
+      "timestamp": "2026-08-12T18:16:46.544Z",
+      "id": "loc_884ab6cb"
+    },
+    {
+      "incidentId": "inc_e0f8bca5",
+      "latitude": 9.671927049163052,
+      "longitude": 77.96399026739874,
+      "accuracy": 127,
+      "timestamp": "2026-08-12T18:16:56.526Z",
+      "id": "loc_8f0325cc"
+    },
+    {
+      "incidentId": "inc_f558b6da",
+      "latitude": 9.671876933033245,
+      "longitude": 77.96395972632025,
+      "accuracy": 182,
+      "timestamp": "2026-08-12T18:17:30.768Z",
+      "id": "loc_fc53f0c4"
+    },
+    {
+      "incidentId": "inc_f558b6da",
+      "latitude": 9.671896469765738,
+      "longitude": 77.96396809626177,
+      "accuracy": 135,
+      "timestamp": "2026-08-12T18:17:38.847Z",
+      "id": "loc_2dc882bf"
+    },
+    {
+      "incidentId": "inc_f558b6da",
+      "latitude": 9.671896469765738,
+      "longitude": 77.96396809626177,
+      "accuracy": 135,
+      "timestamp": "2026-08-12T18:17:56.958Z",
+      "id": "loc_950e1534"
+    },
+    {
+      "incidentId": "inc_d7d67eb2",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:23:26.065Z",
+      "id": "loc_5d995a7d"
+    },
+    {
+      "incidentId": "inc_d7d67eb2",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:23:44.587Z",
+      "id": "loc_8fc3da20"
+    },
+    {
+      "incidentId": "inc_d7d67eb2",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:23:50.644Z",
+      "id": "loc_30ad43de"
+    },
+    {
+      "incidentId": "inc_d7d67eb2",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:23:56.605Z",
+      "id": "loc_14ae744a"
+    },
+    {
+      "incidentId": "inc_35026da5",
+      "latitude": 37.7812,
+      "longitude": -122.418,
+      "accuracy": 9.5,
+      "timestamp": "2026-08-12T18:26:01.223Z",
+      "id": "loc_2fce1841"
+    },
+    {
+      "incidentId": "inc_96d17f4b",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:29:35.871Z",
+      "id": "loc_10ed1e5f"
+    },
+    {
+      "incidentId": "inc_96d17f4b",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "timestamp": "2026-08-12T18:29:50.984Z",
+      "id": "loc_8f1c4803"
+    },
+    {
+      "incidentId": "inc_96d17f4b",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "timestamp": "2026-08-12T18:29:51.008Z",
+      "id": "loc_02755580"
+    },
+    {
+      "incidentId": "inc_61184496",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "timestamp": "2026-08-12T18:31:57.824Z",
+      "id": "loc_ac86c6f7"
+    },
+    {
+      "incidentId": "inc_61184496",
+      "latitude": 9.671897753882478,
+      "longitude": 77.96396901799973,
+      "accuracy": 150,
+      "timestamp": "2026-08-12T18:32:15.687Z",
+      "id": "loc_5ceaa391"
+    },
+    {
+      "incidentId": "inc_8c3cf2f1",
+      "latitude": 9.671926022747773,
+      "longitude": 77.96398951356127,
+      "accuracy": 143,
+      "timestamp": "2026-08-12T18:39:48.616Z",
+      "id": "loc_718c2da1"
+    },
+    {
+      "incidentId": "inc_8c3cf2f1",
+      "latitude": 9.671897289692678,
+      "longitude": 77.96396902470478,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:02.206Z",
+      "id": "loc_e25c4777"
+    },
+    {
+      "incidentId": "inc_8c3cf2f1",
+      "latitude": 9.671897289692678,
+      "longitude": 77.96396902470478,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:02.248Z",
+      "id": "loc_d8c3a206"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:24.469Z",
+      "id": "loc_37be488c"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:42.400Z",
+      "id": "loc_4ed48fbb"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:48.415Z",
+      "id": "loc_70d1f1cd"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67188890824362,
+      "longitude": 77.96396529961632,
+      "accuracy": 164,
+      "timestamp": "2026-08-12T18:40:54.401Z",
+      "id": "loc_a6e99c2e"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67193662988695,
+      "longitude": 77.96399756567357,
+      "accuracy": 156,
+      "timestamp": "2026-08-12T18:41:00.199Z",
+      "id": "loc_7ee526a6"
+    },
+    {
+      "incidentId": "inc_a14990b3",
+      "latitude": 9.67193662988695,
+      "longitude": 77.96399756567357,
+      "accuracy": 156,
+      "timestamp": "2026-08-12T18:41:00.210Z",
+      "id": "loc_c2973fb2"
+    }
+  ],
+  "safetyReports": [
+    {
+      "id": "rep_001",
+      "userId": "usr_demo_001",
+      "userName": "Sarah Jenkins",
+      "category": "POOR_LIGHTING",
+      "title": "Broken street lamps along 4th Street walkway",
+      "description": "Multiple streetlights are completely dead between Elm and Pine St. Walking here after 8 PM is in pitch darkness.",
+      "latitude": 37.7791,
+      "longitude": -122.4112,
+      "address": "4th St & Elm Avenue",
+      "status": "APPROVED",
+      "severity": "MEDIUM",
+      "createdAt": "2026-08-12T00:01:31.409Z",
+      "moderatedAt": "2026-08-12T06:01:31.409Z",
+      "moderatedBy": "usr_admin_001"
+    },
+    {
+      "id": "rep_002",
+      "userId": "usr_demo_001",
+      "userName": "Aisha Patel",
+      "category": "HARASSMENT",
+      "title": "Catcalling and aggressive loitering near subway exit",
+      "description": "Group of individuals blocking subway stairs and following commuters down the sidewalk.",
+      "latitude": 37.7815,
+      "longitude": -122.4205,
+      "address": "Civic Plaza Station Exit B",
+      "status": "APPROVED",
+      "severity": "HIGH",
+      "createdAt": "2026-08-12T10:01:31.409Z",
+      "moderatedAt": "2026-08-12T14:01:31.409Z",
+      "moderatedBy": "usr_admin_001"
+    },
+    {
+      "id": "rep_003",
+      "userId": "usr_demo_001",
+      "userName": "Maya Lin",
+      "category": "ISOLATED_AREA",
+      "title": "Closed construction barricade forces blind detour",
+      "description": "Construction fencing blocks the pedestrian sidewalk, creating an isolated bottleneck with zero escape route.",
+      "latitude": 37.7725,
+      "longitude": -122.4258,
+      "address": "Market St & 9th Bypass",
+      "status": "PENDING",
+      "severity": "MEDIUM",
+      "createdAt": "2026-08-12T16:01:31.409Z"
+    }
+  ],
+  "safetyCheckins": [],
+  "safetyZones": [
+    {
+      "id": "zone_001",
+      "name": "Metropolitan Central Police Station",
+      "type": "POLICE_STATION",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "radiusMeters": 300,
+      "safetyScore": 98,
+      "address": "850 Bryant St, Civic Center",
+      "phone": "911 / (415) 553-0123",
+      "hours": "24/7 Emergency Dispatch",
+      "description": "24/7 guarded command post with safe waiting lobby and CCTV coverage."
+    },
+    {
+      "id": "zone_002",
+      "name": "St. Jude General Hospital & Trauma Center",
+      "type": "HOSPITAL",
+      "latitude": 37.7833,
+      "longitude": -122.4167,
+      "radiusMeters": 250,
+      "safetyScore": 96,
+      "address": "1001 Potrero Ave, Mission District",
+      "phone": "(415) 206-8000",
+      "hours": "24/7 Emergency Room",
+      "description": "Well-lit emergency admission entrance with continuous security patrol."
+    },
+    {
+      "id": "zone_003",
+      "name": "SafeHaven Women Crisis Support & Transit Hub",
+      "type": "SAFE_SHELTER",
+      "latitude": 37.7699,
+      "longitude": -122.4469,
+      "radiusMeters": 200,
+      "safetyScore": 95,
+      "address": "350 Parnassus Ave",
+      "phone": "1-800-799-7233",
+      "hours": "24/7 Assistance",
+      "description": "Certified safe sanctuary providing immediate refuge, security, and shelter."
+    },
+    {
+      "id": "zone_004",
+      "name": "Union Square 24/7 Security Booth",
+      "type": "VERIFIED_SAFE_HAVEN",
+      "latitude": 37.7879,
+      "longitude": -122.4075,
+      "radiusMeters": 180,
+      "safetyScore": 92,
+      "address": "333 Post St, Downtown",
+      "phone": "(415) 781-7880",
+      "hours": "24 Hours",
+      "description": "High visibility tourist security kiosk with rapid police link."
+    },
+    {
+      "id": "zone_005",
+      "name": "South Pier Industrial Alley (Caution Area)",
+      "type": "HIGH_RISK_ZONE",
+      "latitude": 37.7712,
+      "longitude": -122.3921,
+      "radiusMeters": 400,
+      "safetyScore": 35,
+      "address": "Warehouse Sector 4",
+      "hours": "High Risk 20:00 - 06:00",
+      "description": "Reported poor lighting, limited pedestrian traffic, and restricted visibility after dusk."
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_001",
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "SYSTEM_BOOT",
+      "details": "SafeHer AI security subsystem initialized with active Socket.IO dispatch.",
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-08-12T18:01:31.409Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role USER",
+      "ipAddress": "::1",
+      "id": "aud_4e4e64a9",
+      "timestamp": "2026-08-12T18:01:47.756Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_ee7f069d",
+      "details": "SOS triggered at Civic Center Plaza (37.7749, -122.4194). Notified 3 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_b42389c0",
+      "timestamp": "2026-08-12T18:01:47.844Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_3e39d2e3",
+      "timestamp": "2026-08-12T18:02:03.140Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "EMERGENCY_STATUS_ACKNOWLEDGED",
+      "incidentId": "inc_ee7f069d",
+      "details": "Status transitioned from NEW to ACKNOWLEDGED. Notes: Dispatcher Unit 4 acknowledged",
+      "ipAddress": "::1",
+      "id": "aud_02b0fc6c",
+      "timestamp": "2026-08-12T18:02:03.186Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "EMERGENCY_STATUS_RESOLVED",
+      "incidentId": "inc_ee7f069d",
+      "details": "Status transitioned from ACKNOWLEDGED to RESOLVED. Notes: Officer on scene, user is safe in secure vehicle.",
+      "ipAddress": "::1",
+      "id": "aud_90790c14",
+      "timestamp": "2026-08-12T18:02:03.213Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role USER",
+      "ipAddress": "::1",
+      "id": "aud_e3315407",
+      "timestamp": "2026-08-12T18:15:47.901Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_e0f8bca5",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 3 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_29ab9d4a",
+      "timestamp": "2026-08-12T18:16:46.558Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_e0f8bca5",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_12b338d6",
+      "timestamp": "2026-08-12T18:17:02.547Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_f558b6da",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 3 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_4241e5bc",
+      "timestamp": "2026-08-12T18:17:30.782Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_f558b6da",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_91e084be",
+      "timestamp": "2026-08-12T18:17:57.378Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_d7d67eb2",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 3 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_b3fa5e12",
+      "timestamp": "2026-08-12T18:23:26.105Z"
+    },
+    {
+      "actorId": "usr_demo_001",
+      "actorName": "Sarah Jenkins",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_d7d67eb2",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: im in danger\n",
+      "ipAddress": "::1",
+      "id": "aud_771e0c19",
+      "timestamp": "2026-08-12T18:24:00.093Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_3414dd6f",
+      "timestamp": "2026-08-12T18:25:32.026Z"
+    },
+    {
+      "actorId": "usr_d86ebe31",
+      "actorName": "Priya Sharma",
+      "actorRole": "USER",
+      "action": "USER_REGISTERED",
+      "details": "New account registered: priya.safety@gmail.com (Gmail/Email Verified)",
+      "ipAddress": "::1",
+      "id": "aud_e21efe9d",
+      "timestamp": "2026-08-12T18:26:01.163Z"
+    },
+    {
+      "actorId": "usr_d86ebe31",
+      "actorName": "Priya Sharma",
+      "actorRole": "USER",
+      "action": "CONTACT_ADDED",
+      "details": "Added emergency contact: Anita Sharma (Sister) (Sister)",
+      "ipAddress": "::1",
+      "id": "aud_11f5a7a4",
+      "timestamp": "2026-08-12T18:26:01.199Z"
+    },
+    {
+      "actorId": "usr_d86ebe31",
+      "actorName": "Priya Sharma",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_35026da5",
+      "details": "SOS triggered at 4th Street & Market Blvd (37.7812, -122.4180). Notified 1 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_15ade3fc",
+      "timestamp": "2026-08-12T18:26:01.275Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_f1227960",
+      "timestamp": "2026-08-12T18:26:01.845Z"
+    },
+    {
+      "actorId": "usr_86e52fb5",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "USER_REGISTERED",
+      "details": "New account registered: eswarakaruppasamy123@gmail.com (Gmail/Email Verified)",
+      "ipAddress": "::1",
+      "id": "aud_a60fcf8c",
+      "timestamp": "2026-08-12T18:27:23.578Z"
+    },
+    {
+      "actorId": "usr_86e52fb5",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_96d17f4b",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 0 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_ad89bdc4",
+      "timestamp": "2026-08-12T18:29:35.886Z"
+    },
+    {
+      "actorId": "usr_86e52fb5",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_96d17f4b",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_2351c53e",
+      "timestamp": "2026-08-12T18:30:05.166Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_01e3f97b",
+      "timestamp": "2026-08-12T18:31:12.866Z"
+    },
+    {
+      "actorId": "usr_86e52fb5",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_61184496",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 0 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_62f3c5d4",
+      "timestamp": "2026-08-12T18:31:57.840Z"
+    },
+    {
+      "actorId": "usr_86e52fb5",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_61184496",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_77fcb6c7",
+      "timestamp": "2026-08-12T18:32:20.994Z"
+    },
+    {
+      "actorId": "usr_56821a57",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "USER_REGISTERED",
+      "details": "New account registered: janani@gmail.com (Gmail/Email Verified)",
+      "ipAddress": "::1",
+      "id": "aud_a479ee73",
+      "timestamp": "2026-08-12T18:38:59.492Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_87892f41",
+      "timestamp": "2026-08-12T18:39:29.503Z"
+    },
+    {
+      "actorId": "usr_56821a57",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_8c3cf2f1",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 0 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_cce9859c",
+      "timestamp": "2026-08-12T18:39:48.626Z"
+    },
+    {
+      "actorId": "usr_56821a57",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_8c3cf2f1",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_e4d970d8",
+      "timestamp": "2026-08-12T18:40:14.803Z"
+    },
+    {
+      "actorId": "usr_56821a57",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_SOS_TRIGGERED",
+      "incidentId": "inc_a14990b3",
+      "details": "SOS triggered at Kamaraj College of Engineering & Technology,  Kanyakumari - Srinagar Highway,  Kalligudi (9.6719, 77.9640). Notified 0 contacts.",
+      "ipAddress": "::1",
+      "id": "aud_bc283158",
+      "timestamp": "2026-08-12T18:40:24.475Z"
+    },
+    {
+      "actorId": "usr_56821a57",
+      "actorName": "Janani",
+      "actorRole": "USER",
+      "action": "EMERGENCY_STATUS_CANCELLED",
+      "incidentId": "inc_a14990b3",
+      "details": "Status transitioned from NEW to CANCELLED. Notes: Accidental trigger / User is safe",
+      "ipAddress": "::1",
+      "id": "aud_e8590315",
+      "timestamp": "2026-08-12T18:41:14.841Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_6ce16d42",
+      "timestamp": "2026-08-14T10:11:43.392Z"
+    },
+    {
+      "actorId": "usr_admin_001",
+      "actorName": "System Administrator",
+      "actorRole": "ADMIN",
+      "action": "USER_LOGIN",
+      "details": "User logged in with role ADMIN",
+      "ipAddress": "::1",
+      "id": "aud_799370d1",
+      "timestamp": "2026-08-14T10:22:09.819Z"
+    }
+  ]
+}
