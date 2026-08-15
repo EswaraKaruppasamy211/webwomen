@@ -141,12 +141,9 @@ export default function UserHomePage() {
           {/* Direct Dial Fallback */}
           <div className="mt-4 pt-4 border-t border-slate-800/80 w-full flex items-center justify-between text-xs text-slate-400">
             <span>Direct Call:</span>
-            <a
-              href="tel:911"
-              className="font-bold text-red-400 hover:text-red-300 flex items-center gap-1 bg-red-950/40 border border-red-500/30 px-3 py-1 rounded-lg"
-            >
+            <a href="tel:9344869645">
               <Phone className="w-3.5 h-3.5" />
-              <span>Call Police 911</span>
+              <span>Call Police 9344869645</span>
             </a>
           </div>
         </div>
