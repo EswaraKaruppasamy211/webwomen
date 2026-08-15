@@ -194,11 +194,11 @@ function SOSContent() {
                 </button>
 
                 <a
-                  href="tel:911"
+                  href="tel:9344869645"
                   className="flex-1 md:flex-none bg-red-600 hover:bg-red-500 text-white px-5 py-3 rounded-2xl text-xs font-bold transition-all shadow-lg shadow-red-600/40 flex items-center justify-center gap-2 animate-bounce"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>Dial 911 Now</span>
+                  <span>Dial 9344869645 Now</span>
                 </a>
               </>
             ) : (
