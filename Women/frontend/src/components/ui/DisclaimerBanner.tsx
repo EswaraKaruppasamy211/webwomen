@@ -17,11 +17,11 @@ export default function DisclaimerBanner({ className = '' }: { className?: strin
       </div>
 
       <a
-        href="tel:911"
+        href="tel:9344869645"
         className="shrink-0 flex items-center gap-1.5 bg-red-500/20 hover:bg-red-500/30 text-red-300 border border-red-500/40 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors"
       >
         <Phone className="w-3.5 h-3.5" />
-        <span>Dial 911 / 112</span>
+        <span>Dial 9344869645</span>
       </a>
     </div>
   );
