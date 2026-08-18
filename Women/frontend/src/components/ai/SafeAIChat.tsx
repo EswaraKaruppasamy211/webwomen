@@ -23,7 +23,7 @@ export default function SafeAIChat() {
       id: 'm_welcome',
       sender: 'ai',
       text:
-        "Hello! I'm **SafeAI**, your 24/7 personal safety assistant. Ask me about safe routes, emergency actions, nearest police posts, or de-escalation tips.",
+        "Hello! I'm **SafeAI Agent**, your proactive personal safety assistant. I can assess the risk, suggest the safest next steps, and guide you through emergency actions or route decisions.",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       suggestedActions: [
         { label: '🚨 Immediate Danger / Help', action: 'DANGER_TRIGGER', color: 'emergency' },
@@ -133,12 +133,12 @@ export default function SafeAIChat() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h2 className="font-bold text-sm text-white">SafeAI Companion</h2>
+              <h2 className="font-bold text-sm text-white">SafeAI Agent</h2>
               <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-semibold px-2 py-0.5 rounded-full">
                 Active
               </span>
             </div>
-            <p className="text-[11px] text-slate-400">Emergency & Route Navigation Intelligence</p>
+            <p className="text-[11px] text-slate-400">Agentic safety planning & emergency response</p>
           </div>
         </div>
 
