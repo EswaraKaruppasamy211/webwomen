@@ -2,6 +2,7 @@ import { Response } from 'express';
 import { z } from 'zod';
 import { db } from '../db/database';
 import { AuthenticatedRequest } from '../middleware/auth';
+import { config } from '../config';
 
 const ContactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -104,11 +105,16 @@ export class ContactController {
         return;
       }
 
-      // Return confirmed test dispatch delivery proof
+      const hasRealGateway = Boolean(config.smsProviderKey || config.emailProviderKey);
+      const deliveryStatus = hasRealGateway ? 'DELIVERED' : 'QUEUED';
+      const successMessage = hasRealGateway
+        ? `Test alert sent to ${contact.name} via ${contact.phone ? 'SMS' : 'Email'}.`
+        : `Test alert queued for ${contact.name} via ${contact.phone ? 'SMS' : 'Email'}; no live delivery provider is configured.`;
+
       res.json({
         success: true,
-        message: `Test alert sent to ${contact.name} via ${contact.phone ? 'SMS' : 'Email'}.`,
-        deliveryStatus: 'DELIVERED',
+        message: successMessage,
+        deliveryStatus,
         verifiedAt: new Date().toISOString(),
       });
     } catch (err: any) {

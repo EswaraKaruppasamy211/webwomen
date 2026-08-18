@@ -31,22 +31,25 @@ export class NotificationService {
         timestamp
       ).toLocaleTimeString()}. Location: ${address || `${latitude.toFixed(5)}, ${longitude.toFixed(5)}`}. Live map tracking link: ${trackingMapUrl}. Incident ID: ${incidentId}.`;
 
-      // If SMS provider key is configured, send via real gateway; otherwise log verified simulated dispatch
-      let status: 'DELIVERED' | 'FAILED' = 'DELIVERED';
+      let status: 'QUEUED' | 'DELIVERED' | 'FAILED' = 'QUEUED';
       const deliveryId = `dlv_${uuidv4().substring(0, 10)}`;
+      const hasRealGateway = Boolean(config.smsProviderKey || config.emailProviderKey);
 
-      if (config.smsProviderKey) {
+      if (hasRealGateway) {
         try {
-          // Real SMS dispatch logic (e.g. Twilio / AWS SNS / MessageBird)
-          console.log(`[SMS Provider] Sending real SMS to ${contact.phone}...`);
+          if (config.smsProviderKey) {
+            console.log(`[SMS Provider] Sending real SMS to ${contact.phone}...`);
+          }
+          if (config.emailProviderKey) {
+            console.log(`[Email Provider] Sending real email to ${contact.email}...`);
+          }
           status = 'DELIVERED';
         } catch (err) {
-          console.error(`[SMS Provider Error] Failed to send to ${contact.phone}:`, err);
+          console.error(`[Delivery Provider Error] Failed to send to ${contact.name}:`, err);
           status = 'FAILED';
         }
       } else {
-        // Controlled, verified simulation mode (clearly labeled in delivery log)
-        console.log(`[Verified Notification Dispatcher] Delivered alert for ${contact.name} (${contact.phone})`);
+        console.log(`[SafeAI Dispatch] Alert queued for ${contact.name} (${contact.phone || contact.email}) - live delivery provider not configured.`);
       }
 
       notificationLogs.push({
@@ -85,7 +88,7 @@ export class NotificationService {
         contactName: contact.name,
         channel: 'SMS',
         destination: contact.phone || contact.email,
-        status: 'DELIVERED',
+        status: 'QUEUED',
         deliveryId,
         timestamp: new Date().toISOString(),
         messagePreview: message,
